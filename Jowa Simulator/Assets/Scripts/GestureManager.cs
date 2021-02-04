@@ -95,13 +95,9 @@ public class GestureManager : MonoBehaviour
         if (trackedFinger1.phase == TouchPhase.Ended)
         {
             endPoint = trackedFinger1.position;
-            /*if (gestureTime <= _tapProperty.tapTime && Vector2.Distance(startPoint, endPoint) < (Screen.dpi * _tapProperty.tapMaxDistance))
-            {
-                //Debug.Log("TAP!");
-                FireTapEvent(startPoint);
-            }*/
+
             if (gestureTime <= _swipeProperty.swipeTime && 
-                (Vector2.Distance(startPoint, endPoint) < (_swipeProperty.minSwipeDistance * Screen.dpi)))
+                (Vector2.Distance(startPoint, endPoint) >= (_swipeProperty.minSwipeDistance * Screen.dpi)))
             {
                 //Debug.Log("Swipe");
                 FireSwipeEvents();
