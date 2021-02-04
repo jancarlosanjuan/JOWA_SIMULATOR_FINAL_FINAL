@@ -70,10 +70,10 @@ public class NotificationHandler : MonoBehaviour
         AndroidNotificationCenter.SendNotification(notif, "repeat");
     }
 
-    private void OnApplicationPause()
+    /*private void OnApplicationPause()
     {
         SendRepeatNotif();
-    }
+    }*/
 
     /*private void OnApplicationQuit()
     {
