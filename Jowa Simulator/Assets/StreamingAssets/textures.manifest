@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 484455120
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b1f6f9258aa020617475fd4db16e547b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c90fc19e2679e5295d10bd00f33cb4c3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Images/Main_Menu.png
+- Assets/Images/nike stadium.jpg
+- Assets/Images/Main_Game.png
+- Assets/Images/Shield.png
+- Assets/Images/attack03_0000.png
+- Assets/Images/lip.png
+- Assets/Images/Main_Game2.png
+- Assets/Images/Jowa_Simulator.png
+- Assets/Images/keqingportrait.jpg
+- Assets/Images/Jowa_Simulator.psd
+- Assets/Images/nuke.png
+- Assets/Images/BG.png
+- Assets/Images/man-avatar-running-top-view-design-vector-32166145.jpg
+- Assets/Images/exp2.png
+- Assets/Images/JowaSimulator8.png
+- Assets/Images/health.png
+- Assets/Images/Childe.png
+- Assets/Images/Jowa_Simulator2.png
+- Assets/Images/park.jpg
+Dependencies: []

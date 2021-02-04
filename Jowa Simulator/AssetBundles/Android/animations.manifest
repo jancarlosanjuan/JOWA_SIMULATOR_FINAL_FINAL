@@ -1,0 +1,84 @@
+ManifestFileVersion: 0
+CRC: 536640734
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a0220c0151f860ac9a97a3b10d866105
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 27eefc9d67caf7f702a47c7bc3144536
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 02652c4cf29109b4aa6a7b6de6d676ea, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Images/attack01/attack03_0000.controller
+- Assets/Images/Jordan_Sprites/JordanManila_Bullet.anim
+- Assets/Images/Juul_Keyframes/2.png
+- Assets/Images/Juul_Keyframes/1.png
+- Assets/Images/Guitar_Keyframes/Guitar_Controller.controller
+- Assets/Images/Juul_Keyframes/Juul_Animation.anim
+- Assets/Images/Red Enemy/Red_Enemy.controller
+- Assets/Images/Juul_Keyframes/5.png
+- Assets/Images/Red Enemy/walking1.png
+- Assets/Images/attack01/attack01_0014.png
+- Assets/Images/attack01/attack01_0006.png
+- Assets/Images/attack01/attack01_0000.png
+- Assets/Images/Guitar_Keyframes/1.png
+- Assets/Images/attack01/Idle.anim
+- Assets/Images/Jordan_Sprites/6.png
+- Assets/Images/Juul_Keyframes/6.png
+- Assets/Images/attack01/attack01_0003.png
+- Assets/Images/attack01/attack01_0018.png
+- Assets/Images/Green Enemy/GreenEnemy_Animation.anim
+- Assets/Images/attack01/attack01_0008.png
+- Assets/Images/Guitar_Keyframes/3.png
+- Assets/Images/Guitar_Keyframes/2.png
+- Assets/Images/Guitar_Keyframes/5.png
+- Assets/Images/Guitar_Keyframes/Guitar_Animation.anim
+- Assets/Images/Green Enemy/walking11.png
+- Assets/Images/Jordan_Sprites/3.png
+- Assets/Images/attack01/attack01_0010.png
+- Assets/Images/attack01/attack01_0005.png
+- Assets/Images/Jordan_Sprites/1.png
+- Assets/Images/attack01/Attack_Animation.anim
+- Assets/Images/attack01/attack01_0002.png
+- Assets/Images/attack01/attack01_0004.png
+- Assets/Images/Green Enemy/Green Enemy.controller
+- Assets/Images/Blue Enemy/Blue Enemy.controller
+- Assets/Images/Guitar_Keyframes/4.png
+- Assets/Images/Guitar_Keyframes/6.png
+- Assets/Images/Blue Enemy/walking1.png
+- Assets/Images/Jordan_Sprites/4.png
+- Assets/Images/attack01/attack01_0019.png
+- Assets/Images/Jordan_Sprites/5.png
+- Assets/Images/attack01/Player.controller
+- Assets/Images/attack01/attack01_0017.png
+- Assets/Images/Juul_Keyframes/3.png
+- Assets/Images/attack01/attack01_0016.png
+- Assets/Images/attack01/attack01_0012.png
+- Assets/Images/attack01/attack01_0015.png
+- Assets/Images/attack01/attack01_0011.png
+- Assets/Images/Red Enemy/RedEnemy_Animation.anim
+- Assets/Images/Juul_Keyframes/Juul_Controller.controller
+- Assets/Images/Jordan_Sprites/Red_Bullet.controller
+- Assets/Images/attack01/attack01_0013.png
+- Assets/Images/attack01/Idle_Animation.anim
+- Assets/Images/attack01/attack01_0009.png
+- Assets/Images/attack01/attack01_0007.png
+- Assets/Images/Blue Enemy/BlueEnemy_Animation.anim
+- Assets/Images/attack01/attack01_0001.png
+- Assets/Images/Juul_Keyframes/4.png
+- Assets/Images/Jordan_Sprites/2.png
+Dependencies:
+- C:/Users/janca/Documents/___CODES/MOBIGAM/JOWA_SIMULATOR_GIT/Jowa Simulator/AssetBundles/Android/textures

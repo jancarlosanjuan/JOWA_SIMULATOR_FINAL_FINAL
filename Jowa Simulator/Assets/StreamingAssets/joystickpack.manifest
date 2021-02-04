@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 576766313
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d64d2369e4e1be028257a3dd3a69896c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c90fc19e2679e5295d10bd00f33cb4c3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Ridged.png
+- Assets/Joystick Pack/Sprites/Handles/Handle_Outline.png
+- Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Outline_Arrows.png
+- Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Plain.png
+- Assets/Joystick Pack/Sprites/Handles/Handle_Plain.png
+- Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Ridged.png
+- Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Plain.png
+- Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain.png
+- Assets/Joystick Pack/Sprites/Handles/Handle_Ridged_Arrows.png
+- Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged_Arrows.png
+- Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Ridged_Arrows.png
+- Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Outline_Arrows.png
+- Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline_Arrows.png
+- Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Plain_Arrows.png
+- Assets/Joystick Pack/Sprites/Handles/Handle_Ridged.png
+- Assets/Joystick Pack/Sprites/Handles/Handle_Outline_Arrows.png
+- Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Plain_Arrows.png
+- Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain_Arrows.png
+- Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png
+- Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Outline.png
+- Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Ridged_Arrows.png
+- Assets/Joystick Pack/Sprites/Handles/Handle_Plain_Arrows.png
+- Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Outline.png
+- Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged.png
+Dependencies: []
