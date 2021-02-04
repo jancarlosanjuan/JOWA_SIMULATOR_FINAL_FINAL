@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShieldScript : MonoBehaviour
 {
-    private GameManager gamemanager;
+    private Game_Manager gamemanager;
     [SerializeField] private GameObject gamemanagerObject;
     private float shieldCooldown;
 
@@ -13,7 +13,7 @@ public class ShieldScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gamemanager = gamemanagerObject.GetComponent<GameManager>();
+        gamemanager = gamemanagerObject.GetComponent<Game_Manager>();
         AccelerometerScript.Instance.OnShake += Begone;
         shieldText = _shieldText.GetComponent<ChangeText>();
         shieldText.changeCurrencyText(GlobalManager.Instance.Shields);

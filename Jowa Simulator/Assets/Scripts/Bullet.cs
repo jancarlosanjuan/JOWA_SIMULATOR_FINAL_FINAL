@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private GameObject GameManager;
     public BundleManager bundleManager;
-    private GameManager gamemanager;
+    private Game_Manager gamemanager;
     [SerializeField] private Transform playerPosition;
     [SerializeField] private GameObject playervar;
     //[SerializeField] private Transform transform;
@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
 //    [SerializeField] private List<Sprite> spriteList;
  //   [SerializeField] private SpriteRenderer sr;
 
-    [SerializeField] private List<RuntimeAnimatorController> animatorList;
+//    [SerializeField] private List<RuntimeAnimatorController> animatorList;
 
     //initialize these
     public int type;
@@ -33,7 +33,15 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        
+
+        GameManager = GameObject.FindGameObjectWithTag("GameManager");
+        bundleManager = GameObject.FindGameObjectWithTag("AssetBundle").GetComponent < BundleManager>();
+        playerPosition = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        playervar = GameObject.FindGameObjectWithTag("Player");
+        midpoint = GameObject.FindGameObjectWithTag("Midpoint").GetComponent<Transform>();
+
+
+
         type = playervar.GetComponent<PlayerVariables>().type;
         bulletspeed = playervar.GetComponent<PlayerVariables>().bulletSpeed;
         damage = playervar.GetComponent<PlayerVariables>().bulletDamage;

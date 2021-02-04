@@ -7,6 +7,19 @@ TagManager:
   - Bullet
   - Enemy
   - Boss
+  - AssetBundle
+  - Accelerometer
+  - GlobalManager
+  - GameManager
+  - Midpoint
+  - Joystick
+  - AttractionMeterText
+  - AffectionPointsText
+  - WaveCounterText
+  - BulletContainer
+  - EnemyContainer
+  - ShieldText
+  - GestureManager
   layers:
   - Default
   - TransparentFX

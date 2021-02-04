@@ -1,0 +1,52 @@
+ManifestFileVersion: 0
+CRC: 628004435
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f9530941e17826403a27a213b47a8fc1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a5dbe94d01d03591ea634b205a5d69d8
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0a69350215bb26d468e84c4c148c3e54, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2e865de5abb313046b2927012676e0ed, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6f6d4d98c3287cd4ab98eccbac39f69b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ce08f8e907d23fc49a76ad7d1bb22f30, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 94877a0c84a11834f8c5b7a81b2172ab, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3458341c215e0364285c549cc4ea24a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c00b90ef48a55314aa5d66318410a923, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/Enemy PREFAB.prefab
+- Assets/Prefabs/Boss PREFAB.prefab
+- Assets/Prefabs/Bullet PREFAB.prefab
+Dependencies: []

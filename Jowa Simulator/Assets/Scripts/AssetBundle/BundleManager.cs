@@ -17,7 +17,7 @@ public class BundleManager : MonoBehaviour
    }
 
     //dont load assets twice. this keeps track of whats loaded and whats not
-    Dictionary<string, AssetBundle> LoadedBundles = new Dictionary<string, AssetBundle>();
+    public static Dictionary<string, AssetBundle> LoadedBundles = new Dictionary<string, AssetBundle>();
 
 
     public AssetBundle LoadBundle(string bundleTarget)
@@ -25,10 +25,11 @@ public class BundleManager : MonoBehaviour
         //check if loaded
         if (LoadedBundles.ContainsKey(bundleTarget))
         {
+            Debug.LogWarning("ALREADY LOADED THE THINGS");
             return LoadedBundles[bundleTarget];
         }
 
-        AssetBundle ret = AssetBundle.LoadFromFile(Path.Combine(BundleRoot, bundleTarget));
+        AssetBundle ret = AssetBundle.LoadFromFile(Path.Combine(BundleRoot, bundleTarget));//true
 
         if(ret == null)
         {
@@ -36,6 +37,7 @@ public class BundleManager : MonoBehaviour
         }
         else
         {
+        //    LoadedBundles[bundleTarget].Unload(false);
             LoadedBundles.Add(bundleTarget, ret);
         }
 
@@ -47,12 +49,11 @@ public class BundleManager : MonoBehaviour
     {
         T ret = null;
         AssetBundle bundle = LoadBundle(bundleTarget);
-
+       
         if(bundle != null)
         {
             ret = bundle.LoadAsset<T>(assetName);
         }
-
         return ret;
     }
 
@@ -67,5 +68,6 @@ public class BundleManager : MonoBehaviour
         }
         return controller;
     }
+
 
 }

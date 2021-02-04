@@ -8,40 +8,51 @@ public class EnemyScript : MonoBehaviour
     // Start is called before the first frame update
     public BundleManager bundleManager;
     //place global singleton here
-    [SerializeField] private GameObject gamemanagerObject;
-    private GameManager gamemanager;
+    [SerializeField] private GameObject gamemanagerObject = null;
+    private Game_Manager gamemanager;
 
     //Text
     [SerializeField] private GameObject _text;
     private ChangeText text;
 
     //enemy type
-    [SerializeField] private int health = 1;
-    [SerializeField] private float speed;
-    [SerializeField] private int type; //0 = red, 1 = green, 2 = blue 
-    [SerializeField] private int damage = 1;
+    [SerializeField] private int health = 4;
+    [SerializeField] private float speed = 1;
+    [SerializeField] private int type = 1; //0 = red, 1 = green, 2 = blue 
+    [SerializeField] private int damage = 0;
 
     //Enemy Sprites
-//    [SerializeField] private List<Sprite> spriteList;
+    //    [SerializeField] private List<Sprite> spriteList;
     [SerializeField] private Transform spawnStart;
-    [SerializeField] private List<RuntimeAnimatorController> enemyAnimationList;
+//    [SerializeField] private List<RuntimeAnimatorController> enemyAnimationList;
 
     //enemy specifics
     [SerializeField] private float angle;
 
-    [SerializeField] private SpriteRenderer sr;
+//    [SerializeField] private SpriteRenderer sr;
 
     private const string ANIMATIONS = "animations";
 
     private void Awake()
     {
+
         Start();
+
         gameObject.SetActive(true);
+
     }
     void Start()
     {
+        //get references
+        bundleManager = GameObject.FindGameObjectWithTag("AssetBundle").GetComponent<BundleManager>();
+        gamemanagerObject = GameObject.FindGameObjectWithTag("GameManager");
+        gamemanager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Game_Manager>();
+        spawnStart = GameObject.FindGameObjectWithTag("Midpoint").GetComponent<Transform>();
+        _text = GameObject.FindGameObjectWithTag("AffectionPointsText");
+
+
         health = 10;
-        gamemanager = gamemanagerObject.GetComponent<GameManager>();
+        gamemanager = gamemanagerObject.GetComponent<Game_Manager>();
         text = _text.GetComponent<ChangeText>();
         type = Random.Range(0, 3);
 
@@ -50,7 +61,8 @@ public class EnemyScript : MonoBehaviour
         {
             //red
             case 0:
-                health = 3 + (gamemanager.waveNumber*2);//
+
+                health = 3 + (gamemanager.waveNumber * 2);//
                 speed = 0.05f + (float)gamemanager.waveNumber * 0.02f; //+(float)gamemanager.waveNumber * 0.2f
                 damage = type;
                 this.GetComponent<Animator>().runtimeAnimatorController = bundleManager.getAnimationController(ANIMATIONS, "Red_Enemy");
@@ -76,8 +88,8 @@ public class EnemyScript : MonoBehaviour
         angle = Random.Range(0.0f, 360.0f);
         transform.rotation = Quaternion.Euler(transform.forward * angle);
         transform.position = spawnStart.position;
-    //    sr.sprite = spriteList[type];
-    //  this.GetComponent<Animator>().runtimeAnimatorController = enemyAnimationList[type];
+        //    sr.sprite = spriteList[type];
+        //  this.GetComponent<Animator>().runtimeAnimatorController = enemyAnimationList[type];
     }
 
     // Update is called once per frame

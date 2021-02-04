@@ -5,8 +5,8 @@ using UnityEngine;
 public class BulletSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject gamemanagerObject;
-    private GameManager gamemanager;
-    [SerializeField] private GameObject bullet;
+    private Game_Manager gamemanager;
+    [SerializeField] private BundleManager bundleManager;
     [SerializeField] private GameObject playerReference;
     //[SerializeField] private List<GameObject> bulletList;
 
@@ -14,7 +14,7 @@ public class BulletSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gamemanager = gamemanagerObject.GetComponent<GameManager>();
+        gamemanager = gamemanagerObject.GetComponent<Game_Manager>();
     }
 
     // Update is called once per frame
@@ -25,7 +25,10 @@ public class BulletSpawner : MonoBehaviour
 
     public void spawnBullets()
     {
-        GameObject spawn = Instantiate(bullet, playerReference.transform.position, Quaternion.identity);
+
+        GameObject prefab = bundleManager.GetAsset<GameObject>("prefabs", "Bullet PREFAB");
+        GameObject spawn = Instantiate(prefab, playerReference.transform.position, Quaternion.identity);
+
         spawn.SetActive(true);
         gamemanager.bulletContainer.Add(spawn);
         

@@ -6,16 +6,16 @@ public class SpriteScaler : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    [SerializeField] private float height;
-    [SerializeField] private float width;
+    [SerializeField] private float height = 0;
+    [SerializeField] private float width = 0;
     [SerializeField] private float multiplyerLandscape;
     [SerializeField] private float multiplyerPortrait;
     float valueChange;
 
     void Start()
     {
-        //multiplyerPortrait = 1;
-        //multiplyerLandscape = 1;
+ //       multiplyerPortrait = 1;
+ //       multiplyerLandscape = 1;
         Camera cam = Camera.main;
         height = 2f * cam.orthographicSize;
         width = height * cam.aspect;

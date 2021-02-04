@@ -5,11 +5,12 @@ using UnityEngine;
 public class DestroyOnOutofBounds : MonoBehaviour
 {
     [SerializeField] GameObject _gamemanager;
-    private GameManager gamemanager;
+    private Game_Manager gamemanager;
 
     private void Start()
     {
-        gamemanager = _gamemanager.GetComponent<GameManager>();
+        _gamemanager = GameObject.FindGameObjectWithTag("GameManager");
+        gamemanager = _gamemanager.GetComponent<Game_Manager>();
     }
     void Update()
     {
