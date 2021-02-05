@@ -63,22 +63,22 @@ public class EnemyScript : MonoBehaviour
             case 0:
 
                 health = 3 + (gamemanager.waveNumber * 2);//
-                speed = 0.05f + (float)gamemanager.waveNumber * 0.02f; //+(float)gamemanager.waveNumber * 0.2f
-                damage = type;
+                speed += 0.05f + (float)gamemanager.waveNumber * 0.02f; //+(float)gamemanager.waveNumber * 0.2f
+                damage += type;
                 this.GetComponent<Animator>().runtimeAnimatorController = bundleManager.getAnimationController(ANIMATIONS, "Red_Enemy");
                 break;
             //green
             case 1:
-                health = 2 + (gamemanager.waveNumber * 2);
-                speed = 0.07f + (float)gamemanager.waveNumber * 0.02f;
-                damage = type;
+                health += 2 + (gamemanager.waveNumber * 2);
+                speed += 0.07f + (float)gamemanager.waveNumber * 0.02f;
+                damage += type;
                 this.GetComponent<Animator>().runtimeAnimatorController = bundleManager.getAnimationController(ANIMATIONS, "Green Enemy");
                 break;
             //blue
             case 2:
-                health = 1 + (gamemanager.waveNumber * 2);
-                speed = 0.1f + (float)gamemanager.waveNumber * 0.02f;
-                damage = type;
+                health +=  1 + (gamemanager.waveNumber * 2);
+                speed += 0.1f + (float)gamemanager.waveNumber * 0.02f;
+                damage += type;
                 this.GetComponent<Animator>().runtimeAnimatorController = bundleManager.getAnimationController(ANIMATIONS, "Blue Enemy");
                 break;
 

@@ -24,9 +24,9 @@ public class PlayerVariables : MonoBehaviour
     public float bulletDirection;
     void Start()
     {
-        bulletDamage = 10 + GlobalManager.Instance.DamageAdd;
-        health = 10 + GlobalManager.Instance.HealthAdd;
-        bulletSpeed = 1 * GlobalManager.Instance.SpeedMultiplier;
+        bulletDamage += GlobalManager.Instance.DamageAdd + 1;
+        health += GlobalManager.Instance.HealthAdd +1;
+        bulletSpeed += 1 * GlobalManager.Instance.SpeedMultiplier +1;
         currency = GlobalManager.Instance.Currency;
 //        numShields = GlobalManager.Instance.Shields;
 

@@ -4265,8 +4265,8 @@ MonoBehaviour:
   _healthText: {fileID: 1419355463}
   _currencyText: {fileID: 141468272}
   movementSpeed: 0
-  bulletSpeed: 2
-  health: 0
+  bulletSpeed: 1
+  health: 1
   currency: 0
   type: 0
   bulletDamage: 1
