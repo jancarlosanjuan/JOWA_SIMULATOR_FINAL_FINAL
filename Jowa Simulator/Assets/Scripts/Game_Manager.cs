@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Game_Manager : MonoBehaviour
 {
-    [SerializeField] private GameObject spriteExplosion; 
+    public BundleManager bundleManager;
+    private GameObject spriteExplosion; 
     public int waveNumber = 0;
     public bool paused;
     public List<GameObject> enemyContainer;
@@ -23,7 +24,7 @@ public class Game_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        spriteExplosion = bundleManager.GetAsset<GameObject>("prefabs", "Explosion PREFAB");
     }
 
     // Update is called once per frame
@@ -64,7 +65,7 @@ public class Game_Manager : MonoBehaviour
             {
                 //create explosion instance
                 Transform _transform = enemyContainer[i].transform;
-                GameObject explosion = Instantiate(spriteExplosion, _transform.position, Quaternion.identity);
+                GameObject explosion = Instantiate(bundleManager.GetAsset<GameObject>("prefabs", "Explosion PREFAB"), _transform.position, Quaternion.identity);
                 explosion.SetActive(true);
                 explosionContainer.Add(explosion.gameObject);
 
