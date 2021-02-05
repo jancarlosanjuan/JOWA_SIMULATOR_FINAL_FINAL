@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 628004435
+CRC: 3073951391
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f9530941e17826403a27a213b47a8fc1
+    Hash: f442b0f938ad7d0288089ea8cf33bea5
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a5dbe94d01d03591ea634b205a5d69d8
+    Hash: 7118b21c28df4afa7de692049f54f7cc
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -39,6 +39,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 3458341c215e0364285c549cc4ea24a0, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: c00b90ef48a55314aa5d66318410a923, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6e0f68e1859d37d4b88dfd975b112ca9, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 212
@@ -47,6 +49,7 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/Prefabs/Enemy PREFAB.prefab
+- Assets/Prefabs/Explosion PREFAB.prefab
 - Assets/Prefabs/Boss PREFAB.prefab
 - Assets/Prefabs/Bullet PREFAB.prefab
 Dependencies: []

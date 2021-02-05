@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 536640734
+CRC: 1811156264
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a0220c0151f860ac9a97a3b10d866105
+    Hash: 8cee68fb4597d501fd396e58dc2d442d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 27eefc9d67caf7f702a47c7bc3144536
+    Hash: 4f5d8b89b884865e9ad4bed4d9faedaa
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -16,6 +16,8 @@ ClassTypes:
 - Class: 91
   Script: {instanceID: 0}
 - Class: 114
+  Script: {fileID: 11500000, guid: 481681caa3826e94380af979e66af47f, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 02652c4cf29109b4aa6a7b6de6d676ea, type: 3}
 - Class: 115
   Script: {instanceID: 0}
@@ -23,12 +25,14 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/Images/attack01/attack03_0000.controller
+- Assets/Brackeys/2D Mega Pack/Effects/Animation/Explosion_0.controller
 - Assets/Images/Jordan_Sprites/JordanManila_Bullet.anim
 - Assets/Images/Juul_Keyframes/2.png
 - Assets/Images/Juul_Keyframes/1.png
 - Assets/Images/Guitar_Keyframes/Guitar_Controller.controller
 - Assets/Images/Juul_Keyframes/Juul_Animation.anim
 - Assets/Images/Red Enemy/Red_Enemy.controller
+- Assets/Brackeys/2D Mega Pack/Effects/Muzzleflash3.png
 - Assets/Images/Juul_Keyframes/5.png
 - Assets/Images/Red Enemy/walking1.png
 - Assets/Images/attack01/attack01_0014.png
@@ -41,20 +45,27 @@ Assets:
 - Assets/Images/attack01/attack01_0003.png
 - Assets/Images/attack01/attack01_0018.png
 - Assets/Images/Green Enemy/GreenEnemy_Animation.anim
+- Assets/Brackeys/2D Mega Pack/Effects/Animation/Fireball.controller
 - Assets/Images/attack01/attack01_0008.png
 - Assets/Images/Guitar_Keyframes/3.png
 - Assets/Images/Guitar_Keyframes/2.png
 - Assets/Images/Guitar_Keyframes/5.png
 - Assets/Images/Guitar_Keyframes/Guitar_Animation.anim
+- Assets/Brackeys/2D Mega Pack/Effects/Animation/EXPLODE.anim
+- Assets/Brackeys/2D Mega Pack/Effects/Animation/Explosion.controller
 - Assets/Images/Green Enemy/walking11.png
 - Assets/Images/Jordan_Sprites/3.png
+- Assets/Brackeys/2D Mega Pack/Effects/Muzzleflash1.png
 - Assets/Images/attack01/attack01_0010.png
 - Assets/Images/attack01/attack01_0005.png
 - Assets/Images/Jordan_Sprites/1.png
+- Assets/Brackeys/2D Mega Pack/Effects/PixelParticle.png
 - Assets/Images/attack01/Attack_Animation.anim
 - Assets/Images/attack01/attack01_0002.png
 - Assets/Images/attack01/attack01_0004.png
+- Assets/Brackeys/2D Mega Pack/Effects/Muzzleflash2.png
 - Assets/Images/Green Enemy/Green Enemy.controller
+- Assets/Brackeys/2D Mega Pack/Effects/Animation/Fireball.anim
 - Assets/Images/Blue Enemy/Blue Enemy.controller
 - Assets/Images/Guitar_Keyframes/4.png
 - Assets/Images/Guitar_Keyframes/6.png
@@ -67,17 +78,20 @@ Assets:
 - Assets/Images/Juul_Keyframes/3.png
 - Assets/Images/attack01/attack01_0016.png
 - Assets/Images/attack01/attack01_0012.png
+- Assets/Brackeys/2D Mega Pack/Effects/Fireball.png
 - Assets/Images/attack01/attack01_0015.png
 - Assets/Images/attack01/attack01_0011.png
 - Assets/Images/Red Enemy/RedEnemy_Animation.anim
 - Assets/Images/Juul_Keyframes/Juul_Controller.controller
 - Assets/Images/Jordan_Sprites/Red_Bullet.controller
 - Assets/Images/attack01/attack01_0013.png
+- Assets/Brackeys/2D Mega Pack/Effects/Animation/Explosion.anim
 - Assets/Images/attack01/Idle_Animation.anim
 - Assets/Images/attack01/attack01_0009.png
 - Assets/Images/attack01/attack01_0007.png
 - Assets/Images/Blue Enemy/BlueEnemy_Animation.anim
 - Assets/Images/attack01/attack01_0001.png
+- Assets/Brackeys/2D Mega Pack/Effects/Explosion.png
 - Assets/Images/Juul_Keyframes/4.png
 - Assets/Images/Jordan_Sprites/2.png
 Dependencies:
