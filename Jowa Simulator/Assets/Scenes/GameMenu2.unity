@@ -869,7 +869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _swipeProperty:
     minSwipeDistance: 2
-    swipeTime: 0.7
+    swipeTime: 0.5
   _rotateProperty:
     minDistance: 0.75
     minChange: 0.4
@@ -3665,7 +3665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3018868, g: 0.24350303, b: 0.24350303, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8862745}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
