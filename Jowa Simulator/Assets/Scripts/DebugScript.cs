@@ -27,11 +27,13 @@ public class DebugScript : MonoBehaviour
     public void PlaySecondLevel()
     {
         Debug.Log("Loading Level 2...");
+        SceneManager.LoadScene("GameMenu2");
     }
 
     public void PlayThirdLevel()
     {
         Debug.Log("Loading Level 3...");
+        SceneManager.LoadScene("GameMenu3");
     }
 
     public void Notification()

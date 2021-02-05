@@ -8,7 +8,7 @@ using System.IO;
 public class FBManager : MonoBehaviour
 {
     public Text uploadResultText;
-    public GameObject confirmPanel;
+    public GameObject uploadPanel;
     public GameObject uploadingPanel;
     public GameObject resultPanel;
 
@@ -118,7 +118,7 @@ public class FBManager : MonoBehaviour
     {
         if (FB.IsLoggedIn)
         {
-            confirmPanel.SetActive(false);
+            uploadPanel.SetActive(true);
             StartCoroutine(BeginUploadingScreenshot());
         }
         else
