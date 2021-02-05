@@ -3,7 +3,7 @@ CRC: 1811156264
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8cee68fb4597d501fd396e58dc2d442d
+    Hash: b6bc8069b2729df402449ece1d0b10b5
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4f5d8b89b884865e9ad4bed4d9faedaa
@@ -95,5 +95,4 @@ Assets:
 - Assets/Images/Juul_Keyframes/4.png
 - Assets/Images/Jordan_Sprites/2.png
 Dependencies:
-- C:/Users/janca/Documents/___CODES/MOBIGAM/JOWA_SIMULATOR_FINAL2X/JOWA_SIMULATOR_FINAL_FINAL/Jowa
-  Simulator/AssetBundles/Android/textures
+- D:/DLSU/Year 4 Term 1/MOBIGAM/JOWA_SIMULATOR_FINAL_FINAL/Jowa Simulator/AssetBundles/Android/textures

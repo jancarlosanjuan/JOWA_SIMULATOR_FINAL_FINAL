@@ -11,7 +11,7 @@ public class MainMenuScript : MonoBehaviour
     public void LoadGameScene()
     {
         Debug.Log("Loading Game Menu...");
-        SceneManager.LoadScene("GameMenu");
+        SceneManager.LoadScene("LevelSelectMenu");
     }
 
     public void LoadDebugPanel()

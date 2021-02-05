@@ -11,6 +11,7 @@ public class EnemyOutOfBounds : MonoBehaviour
     private ChangeText text;
     [SerializeField] private GameObject _playerVariables;
     private PlayerVariables playervariables;
+    [SerializeField] private GameObject gameOverPanel;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class EnemyOutOfBounds : MonoBehaviour
         text = _text.GetComponent<ChangeText>();
         _playerVariables = GameObject.FindGameObjectWithTag("Player");
         playervariables = _playerVariables.GetComponent<PlayerVariables>();
+        gameOverPanel = GameObject.FindGameObjectWithTag("GameOver");
     }
     void Update()
     {
@@ -33,7 +35,9 @@ public class EnemyOutOfBounds : MonoBehaviour
 
             if(health <= 0)
             {
-                playervariables.gameObject.GetComponent<SceneChanger>().onButtonClicked();
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+                //playervariables.gameObject.GetComponent<SceneChanger>().onButtonClicked();
             }
             GlobalAudio.Instance.playSound("EnemyDeath", 1f);
             gamemanager.destroyEnemy(this.gameObject);

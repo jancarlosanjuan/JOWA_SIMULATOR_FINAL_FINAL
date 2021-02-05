@@ -1,14 +1,14 @@
 ManifestFileVersion: 0
-CRC: 2332944637
+CRC: 2868928959
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
+      Name: textures
+      Dependencies: {}
+    Info_1:
       Name: animations
       Dependencies:
         Dependency_0: textures
-    Info_1:
-      Name: textures
-      Dependencies: {}
     Info_2:
       Name: joystickpack
       Dependencies: {}

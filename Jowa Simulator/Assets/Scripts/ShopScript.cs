@@ -113,7 +113,7 @@ public class ShopScript : MonoBehaviour
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("GameMenu");
+        SceneManager.LoadScene("LevelSelectMenu");
         GlobalAudio.Instance.playSound("ChangeScene", 1f);
     }
 }
